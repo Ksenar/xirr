@@ -1,8 +1,5 @@
 #include "xirr.h"
 
-
-
-
 Xirr::Xirr(QList<double> payments, QList<QDate> dateDiapazon,double rate):
     values(payments),
     dates(dateDiapazon),

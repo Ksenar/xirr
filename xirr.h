@@ -5,15 +5,11 @@
 #include <cmath>
 #include <QtDebug>
 
-
-
-
 class Xirr
 {
 public:
     Xirr(QList<double> payments,QList<QDate> dateDiapazon,double rate);
     ~Xirr(){}
-
 
     double getRate();
 
@@ -22,13 +18,9 @@ private:
     const double EPSILON = {0.0000001};
     const double dayInYear = {365.0};
 
-    double Rate;
     QList<double> values;
     QList<QDate> dates;
-
-    //unsigned int SaveFPUCW;
-    //bool CWChgReq;
-
+    double Rate;
     double Rate1;
     double Rate2;
     double RateN = {0};
@@ -44,11 +36,6 @@ private:
     double disc(QDate d, double &v,double &rate);
     double CalcValue(double &rate);
     void setRate();
-
-
-
-
-
 };
 
 #endif // XIRR_H

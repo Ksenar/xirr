@@ -5,7 +5,6 @@
 
 int main(int argc, char *argv[])
 {
-
     QCoreApplication a(argc, argv);
 
     QList<double> payments = {-5000, 6350}; // payments
